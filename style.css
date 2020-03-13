@@ -1,0 +1,129 @@
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none; /*하단에 생기는 밑줄 없애기 */
+}
+#active{
+  background-color: orange;
+}
+
+
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  color: gray;
+  margin:0;
+  padding:20px;
+}
+h3 {
+  font-size:20px;
+  text-align: left;
+  color: gray;
+  margin:0;
+  padding:20px;
+}
+
+h4 {
+  font-size:17px;
+  border:1px solid red;
+  color: powderblue;
+  margin-top:10;
+  padding:5px;
+}
+
+ol{
+  border-right:1px solid gray;
+  margin:0;
+  width:200px;
+  background-color: #f1f1f1;
+  padding-inline-start: 5px;
+  list-style-type: none;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.js{
+  font-weight : bold;
+  color: red;
+}
+
+#js{
+  font-weight : bold;
+  color: green;
+}
+span{
+  font-weight : bold;
+  color: blue;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit),minmax(100px,1fr));
+
+}
+#grid{
+  display: grid;
+  grid-template-columns:200px 1fr;
+}
+
+/* #grid ul{
+  padding-left:33px;
+  padding:15px;
+  border: :1px solid gray;
+}
+
+#grid #control ul{
+  border:1px solid gray;
+  margin:0;
+}
+
+#grid #article ul{
+  border:1px solid gray;
+  margin:0;
+} */
+
+
+#grid #article{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#grid #control{
+  padding-left:20px;
+  padding-right:20px;
+}
+#grid #info{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+@media(max-width : 800px)  {
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
